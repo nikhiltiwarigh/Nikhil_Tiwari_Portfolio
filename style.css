@@ -1,0 +1,405 @@
+/* universal selector in all tag */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    color: rgb(77, 74, 74);
+
+}
+
+.sidebar{
+    /* background-color: rgb(212, 208, 208);    */
+    background-color: #cfdff8;
+    /* width: 250px; */
+    height: auto;  
+    transition: transform 0.3s ease-in;
+    position: fixed; 
+    border-radius: 7px;
+}
+
+.sidebar nav{
+    padding: 45px;
+    
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding: 33px 0;
+
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s;
+}
+
+.main{
+    /* background-color: yellow; */
+    
+    width: 90vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infocontainer{
+    /* background-color: blueviolet; */
+    /* height: 78vh; */
+    /* width: 145vh; */
+    margin: 80px auto;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-around;      /* text and image will sepate side*/
+}
+
+.devInfo{
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.devPic img{
+    height: 78vh;
+    
+}
+
+.hello{
+font-size: 2.7em;
+}
+
+.name{
+font-size: 2.4em;
+font-weight: bold;
+}
+
+.about{
+font-size: 2em;
+}
+
+.aboutMore{
+    margin-top: 0.6em;
+    font-size: 1em;
+}
+
+.buttons{
+    width: 195px;
+    margin-top: 1em;
+    font-size: 16px;
+}
+
+.buttons button{
+   
+    padding: 4px;
+    height: 35px;
+    margin: 3px 3px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(98, 98, 248);
+    /* font-size: 18px; */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn{
+    font-size: 15px;
+    padding: 4px;
+    height: 35px;
+    margin: 3px 3px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(98, 98, 248);
+    /* font-size: 18px; */
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+#btn1{
+    margin-left: 0;
+}
+
+.buttons button:hover{
+    background-color: white;
+    color: blue;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger img{
+    position: fixed;
+    top: 5px;
+    left: 3px;
+    /* height: 5vh; */
+    cursor: pointer;
+}
+
+.cancel{
+    margin-top: 3px;
+    margin-left: 144px;
+}
+
+.threeline{
+    height: 30px;
+}
+
+
+
+
+
+/*--------------------------about section--------------------------------*/
+
+#about{
+   padding: 50px auto;
+}
+
+.row{
+   margin: 80px auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 90%;
+   height: 600px;
+}
+
+.about-col-1{
+    flex-basis: 20%;  
+}
+
+.about-col-1 img{
+    margin-left: 5px;
+    width: 16em;
+    border-radius: 10px;
+}
+
+.about-col-2{
+    flex-basis: 77%;
+}
+
+/* .sub-title{
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 15px;
+} */
+
+.tab-titles{
+    margin: 20px 0 40px;
+    display: flex;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0559d6;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 70%;
+}
+
+.tab-contents ul li{
+    list-style: square;
+    margin: 10px 15px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+/* ----------------------------------------contact----------------------------------- */
+.contact{
+    padding: 50px 0;
+}
+.contact-row{
+    margin: 60px 8px 60px 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contact-left{
+    flex-basis: 40%;
+}
+
+#contact-right{
+    flex-basis: 50%;
+}
+
+#contact-left p{
+           margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #052658;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #052658;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #0559d6;
+    transform: translateY(-2px);
+}
+
+.contact-right form{
+width: 100%;
+}
+
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ababb8;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #262626;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #ababb8;
+    font-weight: 300;
+    margin-top: 20px;
+    
+}
+
+.copyright i{
+    color: #0559d6;
+
+}
+
+
+
+#msg{
+    margin-top: -30px;
+    display: bolck;
+}
+
+
+/* ------------------------------media quiery-------------------- */
+
+@media (max-width: 1286px) {
+    /* *{
+        background-color: aqua;
+    } */
+    /* .sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+
+    
+    #about{
+        flex-direction: column;
+    } */
+
+    .row{
+        width: 100%;
+    }
+
+    .about-col-1{
+        flex-basis: 100%;  
+    }
+
+    .about-col-2{
+        flex-basis: 100%;  
+        margin-left: 8px;
+    }
+
+    .sub-title{
+        margin: 15px 0 15px;
+    }
+
+    #contact{
+        margin-top: 190px;
+        /* padding: 50px 0; */
+    }
+    
+}
+
+@media (max-width: 600px)
+{
+    #contact-left, #contact-right{
+        flex-basis: 100%;
+    }
+
+
+    #contact-right{
+        margin-top: 30px;
+    }
+
+    .contact-row{
+        margin-left: 7px;
+    }
+
+
+    .hello{
+         font-size: 2.3em;
+    }
+
+    .name{
+        font-size: 2em;
+    }
+
+    .about{
+        font-size: 1.8em;
+    }
+
+    .copyright{
+
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+
+    
+}
+

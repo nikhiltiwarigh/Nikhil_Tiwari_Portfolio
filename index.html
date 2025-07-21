@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+     <div class="sidebar sidebarGo">
+        <nav>
+           <ul>
+            <li><a class="sidebar-link" href="#home">Home</a></li>
+            <li><a class="sidebar-link" href="#about">About</a></li>
+            <li><a class="sidebar-link" href="skiils.html">Skills</a></li>
+            <li><a class="sidebar-link" href="images/Fianl_Resume1.pdf" target="_blank">CV</a></li>
+            <li><a class="sidebar-link" href="#contact">Contact</a></li>  <!-- target="_blank" means new tab pe khulega-->
+           </ul>
+        </nav>
+     </div>
+
+     <div class="main">
+      <div id="home">
+               <div class="hamburger">
+                     <img class="threeline" src="images/ThreelinesIcon.png">
+                     <img class="cancel" src="images/CancelIcon.png" width="23">
+                </div>
+         <div class="infocontainer">
+            <div class="devInfo">
+                 <div class="hello">Hi, I am</div>
+                 <div class="name">Nikhil Tiwari</div>
+                 <div class="about">"Java Developer"</div>
+                 <div class="aboutMore">I am pursuing Bachelor of Technology in Computer Science & Engineering from Indore Institute of Science & Technology, Indore.</div>
+                 <div class="buttons">
+                   <a href="images/Fianl_Resume1.pdf" download target="_blank">
+                    <button id="btn1">Download CV</button>
+                   </a>
+                   <a href="#contact">
+                    <button>Contact Me</button>
+                   </a>
+                 </div>
+            </div>
+            <div class="devPic">
+               <img src="images/NikhilTiwari.jpg" alt="Nikhil Tiwari">
+            </div>
+         </div>
+       
+     </div>
+    </div>
+</div>
+    <!-- -----------------------------about section--------------------------------- -->
+    <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+                 <img src="images/PassportSize1.png">
+            </div>
+            <div class="about-col-2">
+                 <h1 class="sub-title">About Me</h1>
+                 <p>My name is Nikhil Tiwari Dedicated computer science student aiming to join a forward thinking company as a java developer and utilizing my programming and Data Structure Algorithm skills to deliver efficient solutions and contribute my work to team success.</p>
+
+                 <div class="tab-titles">
+                      <div class="tab-links active-link" onclick="opentab('technical-Skills')">Technical Skills</div>
+                      <div class="tab-links" onclick="opentab('soft-Skills')">Soft Skills</div>
+                      <div class="tab-links" onclick="opentab('education')">Education</div>
+                 </div>
+
+                 <div class="tab-contents active-tab" id="technical-Skills">
+                  <ul>
+                     <li>Java</li>
+                     <li>C</li>
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>Java Script</li>
+                     <li>MySQL</li>
+                  </ul>
+                 </div>
+
+                 <div class="tab-contents" id="soft-Skills">
+                  <ul>
+                     <li>Communication</li>
+                     <li>TeamWork</li>
+                  </ul>
+                 </div>
+
+                  <div class="tab-contents" id="education">
+                  <ul>
+                     <li>Pursuing Bachelor of Technology in Computer Science from
+                        Indore Institute of Science & Technology Indore, Madhya Pradesh. <br>
+                        Graduation : [ October, 2022 - October, 2026]</li>
+                     <li>Higher Secondary Education from Model Higher Secondary
+                        School Rewa, Madhya Pradesh with 82%.<br>
+                        Year : [2021 - 2022]</li>
+                     <li>Higher School for Education from Model Higher Secondary
+                        School Rewa, Madhya Pradesh with 89.75%.<br>
+                        Year : [2019 – 2020]</li>
+                     
+                  </ul>
+                 </div>
+
+
+            </div>
+         </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- -----------------------------------contact form------------------------------- -->
+     <div id="contact">
+      <div class="container">
+         <div class="contact-row">
+            <div id="contact-left">
+             <h1>Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i> nikhiltiwari7489@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i> 7489158747</p>
+              <div class="social-icons">
+               <a href="https://www.linkedin.com/in/nikhil-tiwari-53bb6a25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="https://www.instagram.com/nikhiltiwari7043?igsh=YTJxMHQ4b2xmbnJo" target="_blank"><i class="fa fa-instagram"></i></a>
+               <a href="https://www.facebook.com/profile.php?id=100080788155627" target="_blank"><i class="fa fa-facebook-square"></i></a>
+              </div>
+            </div>
+            <div id="contact-right">
+                   <form name="submit-to-google-sheet" action="">
+                     <input type="text" name="Name" placeholder="Your Name" required>
+                     <input type="email" name="Email" placeholder="Your Email" required>
+                     <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
+                     <button class="btn" type="submit">Submit</button>
+                   </form>
+
+                   <span id="msg"></span>
+                 
+            </div>
+         </div>
+      </div>
+      </div>
+        <div class="copyright" style="width: 100%;">
+         <p>Copyright © Nikhil. Made by <i class="fa-solid fa-heart"></i> Nikhil Tiwari </p>
+        </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
